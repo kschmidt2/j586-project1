@@ -290,6 +290,7 @@ a:hover .iconsix {
 .grayicon {
   color: #999;
   text-align: right;
+  padding-left: 7%;
 }
 
 a:hover .grayicon {
@@ -301,6 +302,14 @@ a:hover .grayicon {
   font-size: 1.3em;
   line-height: .9em;
   font-weight: 490;
+}
+
+.linebottom {
+  border-bottom: 1px #e9e9e9 solid;
+}
+
+#maincontent .show-grid [class^=col-] {
+  border-bottom: 0;
 }
 
 .numbercircle {
@@ -366,7 +375,6 @@ a:hover .grayicon {
   text-align: right;
 }
 
-
 .fa-chevron-down {
   color: #fe7f13;
 }
@@ -374,6 +382,10 @@ a:hover .grayicon {
 .checkbox {
   display: inline-block;
   padding-right: 1em;
+}
+
+.toppadding {
+  padding-top: 1.5em;
 }
 
 #contacts {
