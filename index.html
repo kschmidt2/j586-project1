@@ -78,8 +78,7 @@
           <div class="row">
             <div class="col-sm-9 noborder nopadding2">
               <div class="row">
-                <div class="col-xs-6 noborder nopadding1"><span class="label">&nbsp&nbsp&nbsp&nbsp activity</span></div>
-                <div class="col-xs-6 noborder nopadding1 text-right">
+                <div class="col-xs-12 col-sm-4 col-sm-push-8 noborder nopadding1">
                   <div class="dropdown">
                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                       06/28/11-07/21/11
@@ -92,8 +91,9 @@
                       <li><a href="#">Separated link</a></li>
                     </ul>
                   </div> <!-- dropdown -->
-                </div> <!-- row -->
-              </div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-sm-pull-4 noborder nopadding1"><span class="label">&nbsp&nbsp&nbsp&nbsp activity</span></div>
+              </div> <!-- row -->
               <img src="images/analytics.png" class="img-responsive"></div>
             <div class="col-sm-3 noborder">
               <div class="row">
@@ -106,39 +106,57 @@
               </div> <!-- row -->
             </div>
           </div>
-          <div class="row linebottom">
+
+          <div class="row checkbox linebottom">
+                  <div class="col-xs-12 col-md-12 noborder nopadding text-center">
+                    <div class="checkbox-style">
+                        <input type="checkbox" id="c1" name="cc">
+                          <label for="c1"><i></i><span class="facebook1">Facebook</span></label>
+                        <input type="checkbox" id="c2" name="cc">
+                          <label for="c2"><i></i><span class="twitter1">Twitter</span></label>
+                        <input type="checkbox" id="c3" name="cc">
+                          <label for="c3"><i></i><span class="foursquare1">Foursquare</span></label>
+                        <input type="checkbox" id="c4" name="cc">
+                          <label for="c4"><i></i><span class="google1">Google+</span></label>
+                    </div>
+                  </div>
+                </div>
+
+          <!-- <div class="row linebottom">
             <div class="col-xs-12 noborder nopadding text-center">
               <div class="checkbox">
                 <label>
                   <input type="checkbox" value="">
-                  Facebook
+                  <span class="facebook1">Facebook</span>
                 </label>
               </div>
               <div class="checkbox">
                 <label>
                   <input type="checkbox" value="">
-                  Twitter
+                  <span class="twitter1">Twitter</span>
                 </label>
               </div>
               <div class="checkbox">
                 <label>
                   <input type="checkbox" value="">
-                  Foursquare
+                  <span class="foursquare1">Foursquare</span>
                 </label>
               </div>
               <div class="checkbox">
-                <label>
+                <label><span></span>
                   <input type="checkbox" value="">
-                  Google+
+                  <span class="google1">Google+</span>
                 </label>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="row linebottom toppadding">
             <div class="col-sm-6 noborder">
               <div id="contacts">
                 <div class="greenman"></div>
                 <div class="blueribbon"><div class="large">75 contacts</div>4 influencers</div>
+                <div class="ribbonleft"></div>
+                <div class="ribbonright"></div>
                 <div class="chart"><img src="images/greenchart.png" class="img-responsive"></div>
               </div>
             </div>
@@ -146,6 +164,8 @@
               <div id="customers">
                 <div class="orangeman"></div>
                 <div class="blueribbon"><div class="large">17 customers</div>0 influencers</div>
+                <div class="ribbonleft"></div>
+                <div class="ribbonright"></div>
                 <div class="chart"><img src="images/orangechart.png" class="img-responsive"></div>
               </div>
             </div>
@@ -155,6 +175,10 @@
               <div id="bluebox">
                 <div class="label">did you know?</div><br />
                 Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod.
+                <div class="leftcircle"></div>
+                <div class="rightcircle"></div>
+                <div class="leftarrow"><a href="#"><i class="fa fa-chevron-left fa-lg"></i></a></div>
+                <div class="rightarrow"><a href="#"><i class="fa fa-chevron-right fa-lg"></i></a></div>
               </div>
             </div>
           </div>
@@ -167,26 +191,26 @@
           <div class="row"> <!-- taskbar -->
             <div class="row linebottom">
               <div class="col-xs-1 col-md-1 noborder nopadding"><div class="numbercircle">1</div></div>
-              <div class="col-xs-8 col-md-9 noborder nopadding4 taskmenu">Welcome Contacts</div>
-              <div class="col-xs-3 col-md-2 noborder nopadding"><div class="numberbox"><i class="fa fa-user"></i>&nbsp32</div></div>
+              <div class="col-xs-8 col-md-9 noborder nopadding4 taskmenu"><a href="#">Welcome Contacts</a></div>
+              <div class="col-xs-3 col-md-2 noborder nopadding"><div class="numberbox"><a href="#"><i class="fa fa-user"></i>&nbsp32</a></div></div>
             </div>
             <div class="row linebottom">
               <div class="col-xs-1 col-md-1 noborder nopadding"><div class="numbercircle">2</div></div>
-              <div class="col-xs-8 col-md-9 noborder nopadding4 taskmenu">Provide Responses</div>
-              <div class="col-xs-3 col-md-2 noborder nopadding"><div class="numberbox"><i class="fa fa-user"></i>&nbsp36</div></div>
+              <div class="col-xs-8 col-md-9 noborder nopadding4 taskmenu"><a href="#">Provide Responses</a></div>
+              <div class="col-xs-3 col-md-2 noborder nopadding"><div class="numberbox"><a href="#"><i class="fa fa-user"></i>&nbsp36</a></div></div>
             </div>
             <div class="row linebottom">
               <div class="col-xs-1 col-md-1 noborder nopadding"><div class="numbercircle">3</div></div>
-              <div class="col-xs-8 col-md-9 noborder nopadding4 taskmenu">Review Activity</div>
-              <div class="col-xs-3 col-md-2 noborder nopadding"><div class="numberbox"><i class="fa fa-user"></i>&nbsp36</div></div>
+              <div class="col-xs-8 col-md-9 noborder nopadding4 taskmenu"><a href="#">Review Activity</a></div>
+              <div class="col-xs-3 col-md-2 noborder nopadding"><div class="numberbox"><a href="#"><i class="fa fa-user"></i>&nbsp36</a></div></div>
             </div>
             <div class="row linebottom">
               <div class="col-xs-1 col-md-1 noborder nopadding"><div class="numbercircle">4</div></div>
-              <div class="col-xs-8 col-md-9 noborder nopadding4 taskmenu">Reach Out</div>
-              <div class="col-xs-3 col-md-2 noborder nopadding"><div class="numberbox"><i class="fa fa-user"></i>&nbsp3</div></div>
+              <div class="col-xs-8 col-md-9 noborder nopadding4 taskmenu"><a href="#">Reach Out</a></div>
+              <div class="col-xs-3 col-md-2 noborder nopadding"><div class="numberbox"><a href="#"><i class="fa fa-user"></i>&nbsp3</a></div></div>
             </div>
             <div class="row">
-              <div class="col-xs-12 noborder nopadding"><span class="headtext">Recommendations</span>
+              <div class="col-xs-12 noborder nopadding5"><span class="headtext">Recommendations</span>
                 <div class="row linebottom">
                   <div class="col-xs-1 noborder nopadding5"><div class="memo"></div></div>
                   <div class="col-xs-11 noborder nopadding6 recommendations">Article<br /><a href="#">7 steps to getting more fans</a></div>
@@ -213,9 +237,9 @@
 
     <div id="adbox">
       <div class="row">
-        <div class="col-sm-4"><div class="whitebox1"><img src="images/ad1.png" class="img-responsive" height="100%" width="90%"></div></div>
-        <div class="col-sm-4"><div class="whitebox1"><div class="middlead"><img src="images/ad2.png" class="img-responsive"></div></div></div>
-        <div class="col-sm-4"><div class="whitebox1"><right><img src="images/ad3.png" class="img-responsive""></right></div></div>
+        <div class="col-sm-4"><div class="whitebox1"></div></div>
+        <div class="col-sm-4"><div class="whitebox2bg"></div><div class="whitebox2"></div></div>
+        <div class="col-sm-4"><div class="whitebox3"></div></div>
     </div>
     </div> <!-- adbox -->
 

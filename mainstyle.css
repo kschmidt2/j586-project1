@@ -75,15 +75,44 @@
   padding: 0px;
 }
 
-#topnav .row .icontwo, .iconthree {
+.icontwo, .iconthree {
   transform: translateY(9%);
 }
 
-#topnav .row .iconfour, .iconfive {
+@media screen and (max-width: 700px) {
+  .icontwo, .iconthree {
+    position: relative;
+    top: 8px;
+  }
+}
+
+.iconfour, .iconfive {
   transform: translateY(4%);
 }
-#topnav .row .iconsix {
+
+@media screen and (max-width: 700px) {
+  .iconfour {
+    position: relative;
+    top: 4px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .iconfive {
+    position: relative;
+    top: 2px;
+  }
+}
+
+.iconsix {
   transform: translateY(8%);
+}
+
+@media screen and (max-width: 700px) {
+  .iconsix {
+    position: relative;
+    top: 6px;
+  }
 }
 
 #topnav ul {
@@ -217,6 +246,11 @@ a:hover .iconsix {
   font-weight: bold;
 }
 
+#announcements .show-grid [class^=col-] {
+  border-bottom: 0;
+  border-right: 0;
+}
+
 .arrowcircles {
   color: #fe7f13;
   display: inline-block;
@@ -227,6 +261,20 @@ a:hover .iconsix {
   box-shadow: 0 0 5px #999;
   font-size: 10px;
   line-height: 18px;
+}
+
+@media screen and (max-width: 400px) {
+  .arrowcircles {
+    color: #fe7f13;
+    display: inline-block;
+    text-align: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #999;
+    font-size: 10px;
+    line-height: 20px;
+  }
 }
 
 .arrowcircles a {
@@ -304,20 +352,34 @@ a:hover .grayicon {
   font-weight: 490;
 }
 
+.taskmenu a {
+  color: #208de4;
+}
+
+.taskmenu a:hover {
+  color: #777;
+  text-decoration: none;
+}
+
+.noborderright {
+  border-right: 0;
+}
+
 .linebottom {
   border-bottom: 1px #e9e9e9 solid;
 }
 
 #maincontent .show-grid [class^=col-] {
   border-bottom: 0;
+  border-right: 0;
 }
 
 .numbercircle {
-  height: 25px;
-  width: 25px;
+  height: 23px;
+  width: 23px;
   border-radius: 50%;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 22px;
   text-align: center;
   background-color: #32cc66;
   color: white;
@@ -336,6 +398,15 @@ a:hover .grayicon {
   font-weight: 500;
   padding-left: .4em;
   color: #208de4;
+}
+
+.numberbox a {
+  color: #208de4;
+}
+
+.numberbox a:hover {
+  color: #777;
+  text-decoration: none;
 }
 
 .tasklinks a:hover {
@@ -379,9 +450,60 @@ a:hover .grayicon {
   color: #fe7f13;
 }
 
-.checkbox {
+/*.checkbox {
   display: inline-block;
   padding-right: 1em;
+}*/
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label i {
+  display: inline-block;
+  background: url(images/checkbox.png) no-repeat;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+input[type="checkbox"]:checked + label i {
+  background: url(images/checkmark1.png) 1px -2px no-repeat;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.facebook1 {
+  background-color: #114570;
+  padding: 3px 6px 3px 6px;
+  border-radius: 4px;
+  color: white;
+  font-size: .8em;
+}
+
+.twitter1 {
+  background-color: #2298f4;
+  padding: 3px 6px 3px 6px;
+  border-radius: 4px;
+  color: white;
+  font-size: .8em;
+}
+
+.foursquare1 {
+  background-color: #3a599b;
+  padding: 3px 6px 3px 6px;
+  border-radius: 4px;
+  color: white;
+  font-size: .8em;
+}
+
+.google1 {
+  background-color: #31cc66;
+  padding: 3px 6px 3px 6px;
+  border-radius: 4px;
+  color: white;
+  font-size: .8em;
 }
 
 .toppadding {
@@ -393,6 +515,7 @@ a:hover .grayicon {
   margin-left: auto;
   border-radius: 10px;
   box-shadow: 0 2px 5px #ccc;
+  text-align: center;
 }
 
 .greenman {
@@ -409,7 +532,7 @@ a:hover .grayicon {
   background-color: #208de4;
   min-height: 50px;
   text-align: center;
-  padding: 1em;
+  padding: .5em;
   color: white;
   text-transform: uppercase;
 }
@@ -425,6 +548,7 @@ a:hover .grayicon {
   top: -20px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 #customers {
@@ -432,6 +556,7 @@ a:hover .grayicon {
   margin-left: auto;
   border-radius: 10px;
   box-shadow: 0 2px 5px #ccc;
+  text-align: center;
 }
 
 .orangeman {
@@ -439,6 +564,24 @@ a:hover .grayicon {
   margin-left: auto;
   position: relative;
   top: -25px;
+}
+
+.ribbonleft {
+  float: left;
+  position: relative;
+  left: -15px;
+  top: -86px;
+  margin-bottom: -85px;
+}
+
+.ribbonright {
+  float: right;
+  position: relative;
+  left: 15px;
+  top: -86px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: -85px;
 }
 
 #bluebox {
@@ -458,19 +601,144 @@ a:hover .grayicon {
   padding-left: 0;
 }
 
+.leftcircle {
+  float: left;
+  position: relative;
+  left: -4em;
+  top: -38px;
+  clear: right;
+  margin-right: -4em;
+}
+
+@media screen and (max-width: 400px) {
+  .leftcircle {
+    float: left;
+    position: relative;
+    left: -4em;
+    top: -108px;
+    clear: right;
+    margin-right: -4em;
+  }
+}
+
+.rightcircle {
+  float: right;
+  position: relative;
+  left: 4em;
+  top: -38px;
+  clear: right;
+  margin-left: -4em;
+}
+
+@media screen and (max-width: 400px) {
+  .rightcircle {
+    float: right;
+    position: relative;
+    left: 4em;
+    top: -108px;
+    clear: right;
+    margin-left: -4em;
+  }
+}
+
+.leftarrow {
+  float: left;
+  position: relative;
+  left: -4em;
+  top: -21px;
+  margin-right: -4em;
+}
+
+@media screen and (max-width: 400px) {
+  .leftarrow {
+    float: left;
+    position: relative;
+    left: -4em;
+    top: -91px;
+    margin-right: -4em;
+  }
+}
+
+.leftarrow a {
+  color: #fe7f13;
+}
+
+.leftarrow a:hover {
+  color: #208de4;
+}
+
+.rightarrow {
+  float: right;
+  position: relative;
+  top: -21px;
+  margin-right: -4em;
+}
+
+@media screen and (max-width: 400px) {
+  .rightarrow {
+    float: right;
+    position: relative;
+    top: -91px;
+    margin-right: -4em;
+  }
+}
+
+.rightarrow a {
+  color: #fe7f13;
+}
+
+.rightarrow a:hover {
+  color: #208de4;
+}
+
 #adbox {
   width: 100%;
   min-height: 6em;
   background-color: #208de4;
-  padding: 2em 1em 2em 1em;
+  padding: 1em 1em 1em 1em;
 }
 
 .whitebox1 {
+  background-image: url(images/ad1.png);
+  background-color: white;
+  background-position: top left;
+  background-repeat: no-repeat;
   position: relative;
   width: 100%;
-  background: white;
   border-radius: 5px;
-  min-height: 170px;
+  min-height: 160px;
+  margin: 1em 0 1em 0;
+}
+
+.whitebox2 {
+  background-image: url(images/ad2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -190px;
+  border-radius: 5px;
+  min-height: 174px;
+  margin: 1em 0 -190px 0;
+}
+
+.whitebox2bg {
+  background-color: white;
+  position: relative;
+  border-radius: 5px;
+  min-height: 160px;
+  margin: 1em 0 1em 0;
+}
+
+.whitebox3 {
+  background-image: url(images/ad3.png);
+  background-color: white;
+  background-position: right;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+  min-height: 160px;
+  margin: 1em 0 1em 0;
 }
 
 .middlead {
@@ -531,7 +799,7 @@ a:hover .grayicon {
   bottom: 1.25em;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
   #footer [class^=col-] {
     text-align: center;
   }
